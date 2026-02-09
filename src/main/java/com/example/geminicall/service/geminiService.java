@@ -14,6 +14,8 @@ public class geminiService {
 
     //create
     public geminiModel addchat(geminiModel chat){
+        String response ="this is response from gemini";
+        chat.setResponse(response);
         return this.repository.save(chat);
     }
 }
